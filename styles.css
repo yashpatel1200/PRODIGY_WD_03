@@ -1,0 +1,46 @@
+body {
+    background-color: lightblue; /* Set colorful background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#game-container {
+    text-align: center;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+#options {
+    margin-top: 20px;
+}
+
+#reset-btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: lightgreen;
+    border: none;
+    cursor: pointer;
+}
+
+#winner-history {
+    margin-top: 20px;
+}
